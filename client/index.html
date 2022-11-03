@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.38, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>dddddddddddd</title>
+</head>
+
+<body style="height: 2600px;">
+    <div id="Jianli">
+        <div class="section">
+            <div class="text_word"></div>
+            <div class="wrapper">
+                <svg width="200" height="200" style="position: absolute;left: 30px;">
+
+                    <filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                        <feOffset in="blur" dx="2.5" dy="2.5" />
+                    </filter>
+
+                    <g>
+                        <circle id="shadow" style="fill:rgba(0,0,0,0.1)" cx="97" cy="100" r="87"
+                            filter="url(#innerShadow)"></circle>
+                        <circle id="circle" style="stroke: #FFF; stroke-width: 12px; fill:#4e5f5f" cx="100" cy="100"
+                            r="80"></circle>
+                    </g>
+                    <g>
+                        <line x1="100" y1="100" x2="100" y2="55" transform="rotate(80 100 100)"
+                            style="stroke-width: 3px; stroke: #fffbf9;" id="hourhand">
+                            <animatetransform attributeName="transform" attributeType="XML" type="rotate" dur="43200s"
+                                repeatCount="indefinite" />
+                        </line>
+                        <line x1="100" y1="100" x2="100" y2="40" style="stroke-width: 4px; stroke: #fdfdfd;"
+                            id="minutehand">
+                            <animatetransform attributeName="transform" attributeType="XML" type="rotate" dur="3600s"
+                                repeatCount="indefinite" />
+                        </line>
+                        <line x1="100" y1="100" x2="100" y2="30" style="stroke-width: 2px; stroke: #C1EFED;"
+                            id="secondhand">
+                            <animatetransform attributeName="transform" attributeType="XML" type="rotate" dur="60s"
+                                repeatCount="indefinite" />
+                        </line>
+                    </g>
+                    <circle id="center" style="fill:#128A86; stroke: #C1EFED; stroke-width: 2px;" cx="100" cy="100"
+                        r="3"></circle>
+                </svg>
+                <div class="border-circle" id="one"></div>
+                <div class="border-circle" id="two"></div>
+                <div class="background-circle">
+                    <div class="triangle-light"></div>
+                    <div class="body"></div>
+                    <span class="shirt-text"></span>
+                    <span class="shirt-text" style="color:white"></span>
+                    <div class="triangle-dark"></div>
+                </div>
+                <div class="head">
+                    <div class="ear" id="left"></div>
+                    <div class="ear" id="right"></div>
+                    <div class="hair-main">
+                        <div class="sideburn" id="left"></div>
+                        <div class="sideburn" id="right"></div>
+                        <div class="hair-top"></div>
+                    </div>
+                    <div class="face">
+                        <div class="hair-bottom"></div>
+                        <div class="nose"></div>
+                        <div class="eye-shadow" id="left">
+                            <div class="eyebrow"></div>
+                            <div class="eye"></div>
+                        </div>
+                        <div class="eye-shadow" id="right">
+                            <div class="eyebrow"></div>
+                            <div class="eye"></div>
+                        </div>
+                        <div class="mouth"></div>
+                        <div class="shadow-wrapper">
+                            <div class="shadow"></div>
+                        </div>
+                    </div>
+                </div>
+                <span class="music-note" id="one">&#9835;</span>
+                <span class="music-note" id="two">&#9834;</span>
+            </div>
+
+            <a href="http://laoxue.wooyun.icu/">
+                <div class="link_blog" style="z-index:999999"><label>技术博客:&nbsp</label>http://laoxue.wooyun.icu</div>
+            </a>
+        </div>
+        <div style="width:100%;text-align: center;font-size: 2rem;padding-top: 5rem;" id="changeTab">
+            点击
+        </div>
+        <ul style="position:relative">
+            <li class="slip-page"
+                style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);position: absolute;z-index:99;background-color: white;"">
+                <div style=" padding:70px 0;">
+                <p style="display:flex;justify-content: space-between;">
+                <div>
+                    <span class="aboutme"
+                        style="font-weight:800;font-size:50px;font-family: 'Menlo', 'Meslo LG', monospace;position: relative;padding-left:30px">技能标签</span>
+                </div>
+                </p>
+                <canvas id="mountNode" style="width: 100%;height:666px;"></canvas>
+    </div>
+
+    <div class="Jianjie">
+        <span class="aboutme"
+            style="font-weight:800;font-size:50px;font-family: 'Menlo', 'Meslo LG', monospace;position: relative;padding-left:30px">工作经历</span>
+        <span style="display: block;color: rgb(109 118 133) !important;font-size: 30px;">(点击公司查看工作内容)</span>
+        <div style="width:100%;overflow-x: scroll;padding: 50px 0;">
+            <!-- 时间线 -->
+            <ul class="time-horizontal" id="time-horizontal" style="width:180%">
+            </ul>
+        </div>
+        <div class="showdialog" style="background:rgb(22 30 39);color:white">
+            <span class="xxxx"><b>x</b></span>
+            <span>主要职责：</span>
+            <div id="zyzz"></div>
+        </div>
+
+        <div class="Xiangmu">
+            <span class="aboutme"
+                style="font-weight:800;font-size:50px;font-family: 'Menlo', 'Meslo LG', monospace;position: relative;padding-left:30px">公司项目<span
+                    style="font-size: 30px;color:gray;"></span></span>
+            <div class="xm_box">
+                <div class="item">
+                    <span>快方送药</span>
+                    <p><img src="./img/kuaifang.jpg" style="width: 200px;height:200px" /></p>
+                    <!-- <a href="#">点击查看</a> -->
+                </div>
+                <div class="item">
+                    <span>叮当投资</span>
+                    <p><img src="./img/1532059478833923.jpg" style="width: 200px;height:200px" /></p>
+                    <!-- <p>一款电商类小程序,搜寻品牌的最新商品和相关品牌文章,进行收藏和持续关注。面试时按照公司做的demo</p> -->
+                    <!-- <a href="http://p7gn2ayr9.bkt.clouddn.com/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%95%88%E6%9E%9C%E5%9B%BE.gif">点击查看</a> -->
+                </div>
+                <div class="item">
+                    <span>绚星</span>
+                    <p><img src="./img/96.png" style="width: 200px;height:200px" /></p>
+                    <!-- <a href="http://p7gn2ayr9.bkt.clouddn.com/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%95%88%E6%9E%9C%E5%9B%BE.gif">点击查看</a> -->
+                </div>
+                <div class="item">
+                    <span>"金蚂蚁送水"小程序</span>
+                    <p><img src="./img/jinmayi.jpg" style="width: 200px;height:200px" /></p>
+                    <!-- <a href="http://p7gn2ayr9.bkt.clouddn.com/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%95%88%E6%9E%9C%E5%9B%BE.gif">点击查看</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="Xiangmu" style="margin-top:30px">
+            <span class="aboutme"
+                style="font-weight:800;font-size:50px;font-family: 'Menlo', 'Meslo LG', monospace;position: relative;padding-left:30px">个人项目<span
+                    style="font-size: 30px;color:gray;"></span></span>
+            <div class="xm_box1">
+                <div class="item" style="height:30rem">
+                    <span>Chili_TV_client</span>
+                    <p>基于VUE客户端为移动端，利用唤醒URL schema原理, 可以将自己喜欢的资源通过百度云分享上传到平台 利用平台的共享性
+                        和自己的所需资源，相当于一个百度云盘的集合，整体项目分三部分
+                        采用前后端分离处理。</p>
+                    <!-- <p><img src="./img/kuaifang.jpg" style="width: 200px;height:200px"/></p> -->
+                    <a href="https://github.com/laoxue/Chili-TV_client/tree/dev/client"><span
+                            style="font-size: 25px;">点击查看(建议PC端打开Github)</span></a>
+                </div>
+                <div class="item">
+                    <span>Chili_TV_server</span>
+                    <!-- <p><img src="./img/1532059478833923.jpg" style="width: 200px;height:200px"/></p> -->
+                    <p>基于Nodejs Hapi框架构建restful api ， Hapi + Mongodb + Redis + websocket 部分接口涉及爬虫 以及
+                        excel模块操作。</p>
+                    <a href="https://github.com/laoxue/Chili-TV_api/tree/dev"><span
+                            style="font-size: 25px;">点击查看(建议PC端打开Github)</span></a>
+                </div>
+                <div class="item">
+                    <span>Chili_TV_web</span>
+                    <p>Chili_TV_client的后台管理系统，目前更新文章管理和登录相关功能</p>
+                    <!-- <p><img src="./img/96.png" style="width: 200px;height:200px"/></p> -->
+                    <a href="https://github.com/laoxue/Chili-TV_web"><span
+                            style="font-size: 25px;">点击查看(建议PC端打开Github)</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-widget-social mx-n2 mt-3"> <a href="https://zuoluo.tv/weibo" target="_blank"
+                class="weibo btn btn btn-secondary btn-icon btn-rounded m-1"><span><i
+                        class="iconfont icon-weibo1"></i></span></a><a href="javascript:"
+                class="single-popup weixin btn btn-secondary btn-icon btn-rounded m-1"
+                data-img="https://static.is26.com/uploads/2019/07/luolei-wechat.jpg" data-title="个人微信"
+                data-desc=""><span><i class="iconfont icon-weixin1"></i></span></a><a href="https://zuoluo.tv/twitter"
+                target="_blank" class="btn btn-secondary btn-icon btn-rounded m-1"><span><i
+                        class="iconfont icon-twitter"></i></span></a>
+        </div>
+        </li>
+        <li class="slip-page"
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);position: absolute;z-index: 88;background-color: white;width:100%">
+
+            <div style="padding:70px 0;">
+                <p style="display:flex;justify-content: space-between;">
+                <div>
+                    <span class="aboutme"
+                        style="font-weight:800;font-size:50px;font-family: 'Menlo', 'Meslo LG', monospace;position: relative;padding-left:30px">自我介绍</span>
+                </div>
+                </p>
+                <canvas id="ternimal" style="width: 100%;height:60rem;"></canvas>
+            </div>
+
+            <div class="Jianjie">
+                <div class="Xiangmu" style="margin-top:30px">
+
+                </div>
+                <div class="footer-widget-social mx-n2 mt-3"> <a href="https://zuoluo.tv/weibo" target="_blank"
+                        class="weibo btn btn btn-secondary btn-icon btn-rounded m-1"><span><i
+                                class="iconfont icon-weibo1"></i></span></a><a href="javascript:"
+                        class="single-popup weixin btn btn-secondary btn-icon btn-rounded m-1"
+                        data-img="https://static.is26.com/uploads/2019/07/luolei-wechat.jpg" data-title="个人微信"
+                        data-desc=""><span><i class="iconfont icon-weixin1"></i></span></a><a
+                        href="https://zuoluo.tv/twitter" target="_blank"
+                        class="btn btn-secondary btn-icon btn-rounded m-1"><span><i
+                                class="iconfont icon-twitter"></i></span></a>
+                </div>
+        </li>
+        </ul>
+    </div>
+</body>
+<script src="config/jlconfig.js"></script>
+<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.data-set-0.10.1/dist/data-set.min.js"></script>
+<script src="./js/f2.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="js/_app.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
